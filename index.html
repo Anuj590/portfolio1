@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuj Kumar - Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/452a590355.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" class="logo"> -->
+                <h2 class="logo"><span>A</span>nuj.</h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Anuj Kumar</span><br> from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG20240802182843-removebg-preview.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Anuj Kumar, a dedicated graduate computer science student at UIET MDU, driven by my
+                        unwavering passion for technology and knowledge. My journey is marked by proficiency in
+                        programming languages including Java, Python and SQL, honed through hands-on
+                        experience.I excel in problem-solving and optimization processes, specializing in creating
+                        robust Java development models. My adaptibilty and collaborative spirit make me a valuable
+                        assest in dynamic environments. Eager to continually learn, improve and gain experience while
+                        contributing to innovative technical solutions.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming languages</span><br>Java, Python, SQL</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, React, Bootstrap </li>
+                            <li><span>Java Development</span><br>J2EE development, Spring , Data Analysis, Data
+                                Visualization</li>
+                            <li><span>Libraries & Frameworks</span><br>Spring MVC, Spring Boot, Spring Security,
+                                Hibernate</li>
+                            <li><span>Tools</span><br>MySQL, Oracle, Git/GitHub, Maven, Eclipse</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>25<sup>th</sup> July 2023 - 24<sup>th</sup> August 2023</span><br>Web Developer
+                                Inten at Bharat Intern <br> My internship as a Web Devepoer provided me with practical
+                                exposure to real-world website development and its impact on decision-making. I gained
+                                technical skills, learned to work with diverse datasets</li>
+                            <li><span>4<sup>th</sup> June 2023 - 17<sup>th</sup> July 2023</span><br>IT Trainee at MRG
+                                World, Gurugram<br>During my training, I actively contributed to the successful
+                                deployment of FarVision software. I gained hands-on experience in configuring software
+                                modules, assisting with data migration, and providing user training</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>B.Tech CSE from MDU Rohtak</li>
+                            <li><span>2019-2020</span><br>Senior Secondary from Vidya Niketan School Faridabad</li>
+                            <li><span>2017-2018</span><br>High School from Vidya Niketan School Faridabad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Web Development</h2>
+                    <p>Proficiency in HTML, CSS, JavaScript and Angular showcases a strong foundation in web
+                        development and enabling the creation of dynamic and interactive websites.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <!-- <i class="fas fa-crop-alt"></i> -->
+                    <i class="fas fa-brain"></i>
+                    <h2>Backend Development</h2>
+                    <p>Backend development focuses on building and maintaining the server-side logic,
+                        databases, and APIs of a web application.
+                        It ensures that the front-end (client side) can function
+                        smoothly and efficiently by handling data processing, storage, and security.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fas fa-chart-line"></i>
+                    <h2>Java Developer</h2>
+                    <p>A Java developer specializes in using the Java programming language to build,
+                        maintain, and enhance software applications.Design, develop, and maintain Java-based
+                        applications.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <!-- <i class="fab fa-app-store"></i> -->
+                    <i class="fab fa-app-store"></i>
+                    <h2>Data Analyst</h2>
+                    <p>Proficient in data analytics skills, enchancing data value, driving insights, and visually
+                        representing data through plotting for impactful results.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Recipe Sharing Web Application</h3>
+                        <p>A recipe sharing web application built with HTML, CSS, JavaScript, Angular, Java,
+                            Spring Boot, and Spring Security offers a comprehensive platform for users to share and
+                            discover recipes.
+                            Our website offers a intuitive product categorization, advanced search
+                            functionality, and a secure gateway, ensuring a convenient and safe
+                            experience. </p>
+                        <a href="https://github.com/Anuj590/Recipe-Sharing-Web-Application" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Hospital Management System</h3>
+                        <p>Hospital management systems (HMS) are essential for
+                            organizing and managing hospital operations.
+                            Implementing an HMS using Java, JSP (JavaServer Pages),
+                            Servlets, and an Oracle database involves several components.
+                            Handle requests from the client (web browser) and
+                            generate responses, acting as controllers.</p>
+                        <a href="https://github.com/11deepakv/Movie_Recommender" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>CRUD Application with Spring MVC</h3>
+                        <p>A CRUD (Create, Read, Update, Delete) application using
+                            Java, Spring MVC, JSP, and an Oracle database involves building a
+                            web-based application that allows users to perform
+                            these four basic operations on data.Manages the flow of the application using
+                            controllers, services, and repositories.</p>
+                        <a href="https://github.com/11deepakv/Face_mask_Detection" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-list" id="show_if">
+                <div class="work">
+                    <img src="images/work-4 (1).jpg">
+                    <div class="layer">
+                        <h3>Elearing website</h3>
+                        <p>An e-learning website built with HTML and CSS provides a
+                            platform for online education
+                            leveraging responsive design principles</p>
+                        <a href="https://github.com/11deepakv/Magic-notes" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.jpg">
+                    <div class="layer">
+                        <h3>Movie Guide App</h3>
+                        <p> A movie guide app built with HTML, CSS, and JavaScript
+                            provides movie information, ratings, and recommendations.
+                            The app can pull data from movie databases (like TMDB API)</p>
+                        <a href="https://github.com/11deepakv/Gallary-Website" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.jpg">
+                    <div class="layer">
+                        <h3>Netflix Homepage</h3>
+                        <p>CThe page uses flexbox for layout and CSS grid for the movie thumbnails. The design is
+                            dark-themed, with white text and a red button that matches Netflix's branding. You can
+                            replace placeholder images with real content for a more personalized look.</p>
+                        <a href="https://github.com/11deepakv/Gallary-Website" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+            <button class="btn" id="show_active" onclick="to_show()">See More</button>
+            <!-- <a href="" class="btn">See More</a> -->
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>sagaranuj2001@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>8860716242</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/anuj-kumar-973991213/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/SagarAnuj007"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/sagar_anuj.007?igsh=MWY4cnA2bzY1ZnNhdw=="><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/Anuj590"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Anuj. Made with <i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
